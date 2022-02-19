@@ -76,4 +76,28 @@
         app:backgroundTint="#4ea5bd"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="518dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="104dp"
+        android:layout_height="78dp"
+        app:srcCompat="@mipmap/th"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/pp"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="293dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="92dp"
+        android:layout_height="136dp"
+        app:srcCompat="@mipmap/a"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="579dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
