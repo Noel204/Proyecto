@@ -4,26 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        app:srcCompat="@mipmap/logo"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/button_rounded_border"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:srcCompat="@mipmap/google"
+        tools:layout_editor_absoluteY="567dp" />
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/button"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:autoText="false"
-        android:hint="Ingresa Usuario"
-        android:textSize="18sp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="299dp" />
+        android:background="@drawable/button_rounded"
+        android:text="acceder"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="98dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="acceder con:"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_rounded"
+        android:text="registrar"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        tools:layout_editor_absoluteX="80dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/button_rounded_border"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:srcCompat="@mipmap/gorjeo"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Ingresar Usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="320dp" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -32,65 +91,30 @@
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="366dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="383dp" />
 
-    <Button
-        android:id="@+id/button"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button_rounded"
-        android:text="acceder"
-        app:backgroundTint="#4ea5bd"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="435dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="98dp"
-        android:layout_height="25dp"
-        android:text="acceder con:"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="537dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@mipmap/google"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="567dp"
-        android:background="@drawable/button_rounded_border" />
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:background="@drawable/button_rounded_border"
         android:scaleType="fitCenter"
         app:srcCompat="@mipmap/facebook"
         tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="567dp"
-        android:background="@drawable/button_rounded_border" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@mipmap/gorjeo"
-        tools:layout_editor_absoluteX="237dp"
-        tools:layout_editor_absoluteY="567dp"
-        android:background="@drawable/button_rounded_border"/>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:text="registrar"
-        app:backgroundTint="#4ea5bd"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="653dp"
-        android:background="@drawable/button_rounded"/>
+        tools:layout_editor_absoluteY="574dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
