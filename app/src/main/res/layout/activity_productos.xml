@@ -1,8 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
-
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    tools:context=".Productos">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="79dp"
+        android:layout_height="81dp"
+        app:srcCompat="@mipmap/logo"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Productos"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="categorias"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="laptops"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="monitores"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="videojuegos"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="accesorios"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="software"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
