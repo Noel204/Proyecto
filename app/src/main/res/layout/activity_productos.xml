@@ -67,11 +67,12 @@
         tools:layout_editor_absoluteY="373dp" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="128dp"
+        android:layout_width="413dp"
+        android:layout_height="117dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="-1dp">
+        android:scrollbarThumbHorizontal="#4ea5bd"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -102,8 +103,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:hint="Buscar productos..."
+                    android:inputType="textPersonName" />
 
                 <Button
                     android:id="@+id/button11"
