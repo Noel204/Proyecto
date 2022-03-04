@@ -72,7 +72,7 @@
         android:orientation="horizontal"
         android:scrollbarThumbHorizontal="#4ea5bd"
         tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="16dp">
+        tools:layout_editor_absoluteY="67dp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
