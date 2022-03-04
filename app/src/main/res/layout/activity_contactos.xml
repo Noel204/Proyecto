@@ -89,65 +89,33 @@
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="157dp"
-        android:layout_marginEnd="301dp"
-        android:layout_marginRight="301dp"
-        android:layout_marginBottom="518dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/telefono" />
+        app:srcCompat="@mipmap/telefono"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="157dp" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="130dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/mapView"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@mipmap/Correo" />
+        app:srcCompat="@mipmap/correo"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="254dp" />
 
     <ImageButton
         android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="89dp"
-        android:layout_marginLeft="89dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="152dp"
-        android:layout_marginRight="152dp"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:srcCompat="@mipmap/Reloj" />
+        android:layout_width="74dp"
+        android:layout_height="55dp"
+        app:srcCompat="@mipmap/reloj"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="158dp" />
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@mipmap/Ubicacion" />
+        android:layout_width="62dp"
+        android:layout_height="47dp"
+        app:srcCompat="@mipmap/ubicacion"
+        tools:layout_editor_absoluteX="282dp"
+        tools:layout_editor_absoluteY="254dp" />
 
     <TextView
         android:id="@+id/textView4"
