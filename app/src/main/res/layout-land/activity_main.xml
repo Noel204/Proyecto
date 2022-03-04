@@ -20,8 +20,8 @@
         android:layout_height="50dp"
         android:autoText="false"
         android:hint="Ingresa Usuario"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="379dp" />
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="55dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -30,6 +30,6 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="450dp" />
+        tools:layout_editor_absoluteX="380dp"
+        tools:layout_editor_absoluteY="112dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
