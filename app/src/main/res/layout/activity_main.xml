@@ -11,19 +11,61 @@
         android:id="@+id/imageButton"
         android:layout_width="50dp"
         android:layout_height="57dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/button_rounded_border"
         android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.195"
         app:srcCompat="@mipmap/google"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="567dp" />
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_rounded_border"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@mipmap/facebook"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/button_rounded_border"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@mipmap/gorjeo"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="250dp"
         android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/custom_button"
         android:text="acceder"
         android:textColor="#000000"
@@ -54,25 +96,14 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="@drawable/custom_button"
-        app:backgroundTint="@null"
         android:text="registrar"
         android:textColor="#000000"
+        app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
-        tools:layout_editor_absoluteX="80dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:background="@drawable/button_rounded_border"
-        android:scaleType="fitCenter"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:srcCompat="@mipmap/gorjeo"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteY="574dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -81,10 +112,11 @@
         android:ems="10"
         android:hint="Ingresar Usuario"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="320dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
@@ -93,10 +125,11 @@
         android:ems="10"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="383dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -108,16 +141,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/logo" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button_rounded_border"
-        android:scaleType="fitCenter"
-        app:srcCompat="@mipmap/facebook"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="574dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
