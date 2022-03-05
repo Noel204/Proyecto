@@ -7,14 +7,17 @@
     tools:context=".Productos">
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button8"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:text="categorias"
+        android:text="videojuegos"
         android:textColor="#000000"
         app:backgroundTint="#4ea5bd"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <Button
         android:id="@+id/button7"
@@ -23,18 +26,11 @@
         android:text="monitores"
         android:textColor="#000000"
         app:backgroundTint="#4ea5bd"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="523dp" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="videojuegos"
-        android:textColor="#000000"
-        app:backgroundTint="#4ea5bd"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="316dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
 
     <Button
         android:id="@+id/button10"
@@ -43,18 +39,11 @@
         android:text="software"
         android:textColor="#000000"
         app:backgroundTint="#4ea5bd"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="423dp" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="accesorios"
-        android:textColor="#000000"
-        app:backgroundTint="#4ea5bd"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="473dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
         android:id="@+id/button6"
@@ -63,16 +52,49 @@
         android:text="laptops"
         android:textColor="#000000"
         app:backgroundTint="#4ea5bd"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="373dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="accesorios"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="categorias"
+        android:textColor="#000000"
+        app:backgroundTint="#4ea5bd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="413dp"
         android:layout_height="117dp"
         android:orientation="horizontal"
         android:scrollbarThumbHorizontal="#4ea5bd"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="67dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
